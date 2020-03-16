@@ -13,11 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-	$nama = 'Joko Riyadi';
-    return view('index', ['nama' => $nama]);
-});
+// Route::get('/', function () {
+// 	$nama = 'Joko Riyadi';
+//     return view('index', ['nama' => $nama]);
+// });
 
-Route::get('/about', function () {
-    return view('about');
-});
+// Route::get('/about', function () {
+//     return view('about');
+// });
+
+Route::get('/', 'PagesController@home');
+Route::get('/about', 'PagesController@about');
+Route::get('/mahasiswa', 'MahasiswaController@index');
