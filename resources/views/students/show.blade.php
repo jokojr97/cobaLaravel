@@ -16,8 +16,12 @@
 						    <h6 class="card-subtitle mb-2 text-muted">{{$student->nrp}}</h6>
 						    <p class="card-text">{{$student->email}}</p>
 						    <p class="card-text">{{$student->jurusan}}</p>
-						    <a href="" class="btn btn-info mr-1">Edit</a>
-						    <a href="" class="btn btn-danger mr-1">Hapus</a>
+						    <a href="/students/{{$student->id}}/edit" class="btn btn-info mr-1">Edit</a>
+						    <form method="post" action="/students/{{$student->id}}" class="d-inline">
+						    	@method('delete')
+						    	@csrf
+						    	<button class="btn btn-danger">Hapus</button>
+						    </form>
 						    <a href="/students" class="card-link">Kembali</a>
 						  </div>
 						</div>

@@ -21,7 +21,8 @@
   				<div class="navbar-nav">
   				  <a class="nav-item nav-link active" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
   				  <a class="nav-item nav-link" href="{{ url('/about') }}">About</a>
-  				  <a class="nav-item nav-link" href="{{ url('/students') }}">Mahasiswa</a>
+            <a class="nav-item nav-link" href="{{ url('/mahasiswa') }}">Mahasiswa</a>
+  				  <a class="nav-item nav-link" href="{{ url('/students') }}">Students</a>
   				</div>
   			</div>
   		</div>
