@@ -11,14 +11,15 @@
 
 				<div class="row">
 					<div class="col-6">	
-						<form method="post" action="/students/create">							
+						<form method="post" action="/students">							
 						  @csrf
 						  <div class="form-group">
 						    <label for="nama">Nama</label>
 						    <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" id="nama" placeholder="Masukkan Nama Mahasiswa" value="{{old('nama')}}">
-							@error('nama')
-							    <div class="invalid-feedback">{{ $message }}</div>
-							@enderror
+							
+				            @error('username')
+				            <div class="invalid-feedback">salah</div>
+				            @enderror
 						  </div>						
 						  <div class="form-group">
 						    <label for="email">Email</label>

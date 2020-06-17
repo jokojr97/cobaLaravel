@@ -75,8 +75,8 @@ class StudentsController extends Controller
     public function show(Student $student)
     {
         //
-        // return $student;
-        return view('students.show', compact('student'));
+        return $student;
+        // return view('students.show', compact('student'));
     }
 
     /**
